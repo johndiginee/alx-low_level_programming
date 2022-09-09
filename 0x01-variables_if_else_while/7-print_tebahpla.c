@@ -10,7 +10,7 @@ int main(void)
 
 	for (num = 'z'; num >= 'a'; num--)
 	{
-		purchar(num);
+		putchar(num);
 	}
 	putchar('\n');
 	return (0);
