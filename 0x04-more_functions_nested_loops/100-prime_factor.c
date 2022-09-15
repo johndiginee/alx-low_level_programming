@@ -8,7 +8,9 @@
  */
 int main(void)
 {
-	long int num, max, i;
+	long int num;
+	long int max;
+	long int i;
 
 	num = 612852475143;
 	max = -1;
