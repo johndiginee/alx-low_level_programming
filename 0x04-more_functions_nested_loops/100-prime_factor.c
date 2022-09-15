@@ -23,7 +23,7 @@ int main(void)
 
 	for (i = 3; i <= sqrt(num); i = i + 2)
 	{
-		while (n % i == 0)
+		while (num % i == 0)
 		{
 			max = i;
 			num = num / i;
