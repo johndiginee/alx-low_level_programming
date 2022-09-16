@@ -8,7 +8,9 @@
  */
 int main(void)
 {
-	int month, day, year;
+	int month;
+	int day;
+	int year;
 
 	month = 4;
 	day = 01;
