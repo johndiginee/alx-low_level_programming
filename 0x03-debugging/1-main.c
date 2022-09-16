@@ -9,7 +9,7 @@ int main(void)
 {
 	int i;
 
-	print("Infinite oop incoming :(\n");
+	printf("Infinite oop incoming :(\n");
 	/*
 	* i = 0;
 	*
