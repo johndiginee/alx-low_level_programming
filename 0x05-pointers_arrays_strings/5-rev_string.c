@@ -23,6 +23,6 @@ void rev_string(char *s)
 	{
 		smp = s[i];
 		s[i] = s[num2];
-		s[len2--] = smp;
+		s[num2--] = smp;
 	}
 }
