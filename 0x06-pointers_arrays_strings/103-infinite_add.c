@@ -46,7 +46,7 @@ char *rev_string(char *s)
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int l1 = _strlen(n1), l2 = _strlen(n2), i = 0; a, b, c = 0;
+	int l1 = _strlen(n1), l2 = _strlen(n2), i = 0, a, b, c = 0;
 
 	for (l1--, l2--, size_r--; l1 >= 0 || l2 >= 0 || c; l1--, l2--, i++)
 	{
