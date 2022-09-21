@@ -16,7 +16,7 @@ char *leet(char *s)
 
 	for (; *s; s++)
 	{
-		for (i = o; leetin[i]; i++)
+		for (i = 0; leetin[i]; i++)
 			if (*s == leetin[i])
 				*s = leetout[i];
 	}
