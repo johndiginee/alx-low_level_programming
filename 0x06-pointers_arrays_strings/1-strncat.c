@@ -2,24 +2,20 @@
 
 /**
  * _strncat - concatenates two strings
- * @dest: char type
- * @src: char type
- * @n: integer type
- * i - integer type
- * j - integer type
- * Return: char type
+ * @dest: the destination buffer
+ * @src: the source buffer
+ * @n: the number of bytes to copy, at most
+ *
+ * Return: pointer to destination buffer
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	int j;
+	char *ret = dest;
 
-	for (i = 0; dest[i] != '\0'; i++)
-		;
-	for (j = 0; j < n && src[j] != '\0'; i++; j++)
-		dest[i] = src[j];
-
-	dest[i] = '\0';
-	return (dest);
+	while (*dest)
+		dest++;
+	while (*src && n--)
+		*dest++ = *src++;
+	*dest = '\0';
+	return (ret);
 }
-
