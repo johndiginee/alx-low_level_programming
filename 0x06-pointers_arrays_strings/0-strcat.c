@@ -2,23 +2,19 @@
 
 /**
  * _strcat - concatenates two strings
- * @dest: char type
- * @src: char type
- * i - integer type
- * j - integer type
- * Return: char type
+ * @dest: the destination buffer
+ * @src: the source
+ *
+ * Return: pointer to destination buffer
  */
 char *_strcat(char *dest, char *src)
 {
-	int i;
-	int j;
+	char *ret = dest;
 
-	for (i = 0; dest[i] != '\0'; i++)
-
-	for (j = 0; src[j] != '\0'; j++, i++)
-		dest[i] = src[j];
-
-	dest[i] = '0\';
-	return (dest);
+	while (*dest)
+		dest++;
+	while (*src)
+		*dest++ = *src++;
+	*dest = *src;
+	return (ret);
 }
-
