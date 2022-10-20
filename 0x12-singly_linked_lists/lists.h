@@ -2,8 +2,8 @@
 #define LISTS_H
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-#include <sttdlib.h>
 
 /**
  * struct list_s - singly linked list
