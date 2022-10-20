@@ -12,12 +12,11 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * for ALX x Holberton project
  */
 typedef struct list_s
 {
 	char *str;
-	unsigned innt len;
+	unsigned int len;
 	struct list_s *next;
 } list_t;
 
