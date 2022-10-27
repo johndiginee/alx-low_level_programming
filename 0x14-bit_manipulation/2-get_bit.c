@@ -5,7 +5,7 @@
  * @n: the nummber to index
  * @index: the bit to get
  *
- * Return=: the bit state or -1 on error
+ * Return: the bit state or -1 on error
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
